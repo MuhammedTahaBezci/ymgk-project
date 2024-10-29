@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">Çaylaklık</div>
+        <div class="logo">Logom</div>
         <div class="nav-buttons">
-            <button onclick="girisYap()">Giriş Yap</button>
-            <button onclick="kayitOl()">Kayıt Ol</button>
+          <button><a href="http://127.0.0.1:8000/login/" class="login">Giriş Yap</a></button>
+          <button><a href="http://127.0.0.1:8000/register/" class="login">Kayıt Ol</a></button>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
+      <img src="../../static/ARWebProject/arkaplan.jpg" alt="Cocuk Resmi" class="img">
         <div class="intro">
             <h1>Mobil Uygulama Çaylaklık</h1>
             <p>Mobil sürümümüzle tanışın ve uygulamamızın sunduğu özellikleri keşfedin.</p>
