@@ -1,4 +1,4 @@
-/* From Uiverse.io by glisovic01 */
+/* Kayıt Kutusu */
 .login-box {
   position: absolute;
   top: 50%;
@@ -7,12 +7,13 @@
   padding: 40px;
   margin: 20px auto;
   transform: translate(-50%, -55%);
-  background: rgba(0, 0, 0, .9);
+  background: rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
+/* Başlık */
 .login-box p:first-child {
   margin: 0 0 30px;
   padding: 0;
@@ -23,6 +24,7 @@
   letter-spacing: 1px;
 }
 
+/* Kullanıcı Girişi Alanı */
 .login-box .user-box {
   position: relative;
 }
@@ -47,9 +49,10 @@
   font-size: 16px;
   color: #fff;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
+/* Label Animasyonu */
 .login-box .user-box input:focus~label,
 .login-box .user-box input:valid~label {
   top: -20px;
@@ -58,6 +61,7 @@
   font-size: 12px;
 }
 
+/* Kayıt Butonu */
 .login-box button {
   position: relative;
   display: inline-block;
@@ -171,6 +175,7 @@
   }
 }
 
+/* Alt Metin ve Linkler */
 .login-box p:last-child {
   color: #aaa;
   font-size: 14px;

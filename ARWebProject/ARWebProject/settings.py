@@ -11,9 +11,21 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import firebase_admin
+from firebase_admin import credentials
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+cred = credentials.Certificate(
+    "ARWeb\\firebase\\ymgkweb-firebase-adminsdk-udemu-fd9dd410c8.json"
+)
+firebase_admin.initialize_app(
+    cred,
+    {
+        "databaseURL": "https://ymgkweb-default-rtdb.europe-west1.firebasedatabase.app/"
+    },
+)
 
 
 # Quick-start development settings - unsuitable for production

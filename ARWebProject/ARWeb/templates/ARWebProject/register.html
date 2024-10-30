@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="../../static/ARWebProject/registerstyle.css">
+</head>
+<body>
+    <div class="login-box">
+      <p>Kayıt Ol</p>
+      <form action="http://127.0.0.1:8000/register" method="post">
+        {% csrf_token %}
+        <div class="user-box">
+          <input required="" name="isim" type="text">
+          <label>İsim</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="soyisim" type="text">
+          <label>Soyisim</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="dogumTarihi" type="text" placeholder="GG/AA/YYYY">
+          <label>Doğum Tarihi</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="email" type="email">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="sifre" type="password">
+          <label>Şifre</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="sifreDogrulama" type="password">
+          <label>Şifreyi Doğrula</label>
+        </div>
+        <button type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Kayıt Ol
+        </button>
+      </form>
+      <p>Hesabınız var mı? <a href="/login" class="a2">Giriş yapın!</a></p>
+    </div>
+</body>
+</html>
