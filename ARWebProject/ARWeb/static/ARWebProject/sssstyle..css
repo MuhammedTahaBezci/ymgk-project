@@ -1,0 +1,136 @@
+/* Sayfa genel ayarları */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.navbar-title {
+    font-size: 1.8em;
+}
+
+/* Arama Çubuğu */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 60%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
+
+/* Sayfa Başlığı */
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* SSS Konteyner */
+.faq-container {
+    width: 70%;
+    margin: 30px auto;
+}
+
+/* Accordion Butonları */
+.accordion {
+    background-color: #f7f7f7;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.accordion:hover {
+    background-color: #e2e2e2;
+}
+
+.accordion.active {
+    background-color: #333;
+    color: white;
+}
+
+/* Panel */
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+}
+
+.panel p {
+    padding: 10px 15px;
+    color: #666;
+}
+
+/* Genel Düzenlemeler */
+@media (max-width: 768px) {
+    .search-input {
+        width: 80%;
+    }
+
+    .faq-container {
+        width: 90%;
+    }
+
+    .navbar-title {
+        font-size: 1.5em;
+    }
+}

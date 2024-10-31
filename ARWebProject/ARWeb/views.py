@@ -81,3 +81,6 @@ def register_view(request):
             messages.error(request, "Doğum tarihinizi GG/AA/YYYY olacak şekilde girin.")
 
     return render(request, "../templates/ARWebProject/register.html")
+
+def sss_view(request):
+    return render(request, "../templates/ARWebProject/sss.html")
