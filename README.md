@@ -1,36 +1,80 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+Bu proje, oyun indirimi ve kullanıcı yönetimi sağlayan modern bir Next.js uygulamasıdır. Kullanıcılar giriş yapabilir, kayıt olabilir ve giriş yaptıklarında oyunu indirebilirler. Proje Firebase kullanarak kimlik doğrulama ve kullanıcı yönetimi sağlar.
 
-First, run the development server:
+Canlı sürüm: https://ymgk-project-git-main-muhammedtahabezcis-projects.vercel.app/
 
-```bash
+✨ Özellikler
+
+🔑 Kullanıcı girişi ve kayıt sistemi (Firebase Authentication)
+
+📁 Oyun indirme sayfası (Sadece giriş yapan kullanıcılara açık)
+
+🎮 Oyun bilgileri bileşeni (GameInfo)
+
+📊 React context ile oturum yönetimi (AuthContext)
+
+🖊️ Tailwind CSS ile responsive ve modern tasarım
+
+⚡ Next.js 13 App Router mimarisi
+
+
+⚡ Kurulum
+
+Projeyi yerel ortamda çalıştırmak için:
+
+1. Gerekli Araçlar
+
+Node.js (18+)
+
+npm, yarn, pnpm ya da bun
+
+2. Klonlama ve Bağımlılıklar
+
+git clone https://github.com/kullanici-adi/oyun-sitesi.git
+cd oyun-sitesi
+npm install
+
+3. Ortam Değişkenleri
+
+.env.local dosyası oluşturun ve Firebase ayarlarını girin:
+
+NEXT_PUBLIC_FIREBASE_API_KEY=...
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=...
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=...
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=...
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=...
+NEXT_PUBLIC_FIREBASE_APP_ID=...
+
+4. Geliştirme Sunucusu
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000 adresinden uygulamaya erişin.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📈 Ana Sayfa (“page.tsx”)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Ana sayfa, oturum durumuna göre kullanıcıya butonlar gösterir:
 
-## Learn More
+Giriş yapan kullanıcılar: "Hemen İndir" butonu
 
-To learn more about Next.js, take a look at the following resources:
+Oturum açmayanlar: "Giriş Yap / Kayıt Ol" seçenekleri
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ayrıca oyunla ilgili tanıtım görseli ve bilgileri içerir.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎓 Kullanılan Teknolojiler
 
-## Deploy on Vercel
+Next.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+React
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Firebase
+
+Tailwind CSS
+
+TypeScript
+
+🚀 Yayınlama
+
+Proje şu adreste yayındadır:
+https://ymgk-project-git-main-muhammedtahabezcis-projects.vercel.app/
