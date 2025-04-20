@@ -31,7 +31,7 @@ npm, yarn, pnpm ya da bun
 
 2. Klonlama ve Bağımlılıklar
 
-git clone https://github.com/kullanici-adi/oyun-sitesi.git
+git clone https://github.com/MuhammedTahaBezci/ymgk-project.git
 cd oyun-sitesi
 npm install
 
