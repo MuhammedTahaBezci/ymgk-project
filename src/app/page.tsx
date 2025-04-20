@@ -3,6 +3,7 @@
 import { useAuth } from '@/context/AuthContext';
 import Link from 'next/link';
 import GameInfo from '@/components/GameInfo';
+import Image from 'next/image';
 
 export default function Home() {
   const { user, loading } = useAuth();
@@ -14,11 +15,13 @@ export default function Home() {
       {/* Görsel ve açıklama yan yana */}
       <div className="flex flex-col md:flex-row items-center md:items-start gap-10 max-w-5xl w-full">
         {/* Sol: Oyun Görseli */}
-        <div className="w-full md:w-1/2">
-          <img
-            src="../images/oyun (1)-Photoroom.png"
+        <div className="w-full md:w-1/2  flex justify-center">
+          <Image
+            src="/images/oyun (1)-Photoroom.png"
             alt="Oyun Ekran Görüntüsü"
-            className="w-full max-w-md h-auto rounded-2xl shadow-xl border border-gray-300 mx-auto"
+            width={350}
+            height={700}
+            className="rounded-2xl shadow-xl border border-gray-300"
             
           />
           

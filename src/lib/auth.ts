@@ -4,7 +4,6 @@ import {
     signOut as firebaseSignOut, 
     onAuthStateChanged,
     User,
-    Auth,
     NextOrObserver
   } from 'firebase/auth';
   import { auth } from '../lib/firebase'; // Firebase yapılandırma dosyanız
@@ -15,8 +14,9 @@ import {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       return { user: userCredential.user, error: null };
-    } catch (error: any) {
-      return { user: null, error: error.message };
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : String(error);
+      return { user: null, error: message };
     }
   };
   
@@ -25,8 +25,9 @@ import {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       return { user: userCredential.user, error: null };
-    } catch (error: any) {
-      return { user: null, error: error.message };
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : String(error);
+      return { user: null, error: message };
     }
   };
   
@@ -35,8 +36,9 @@ import {
     try {
       await firebaseSignOut(auth);
       return { success: true, error: null };
-    } catch (error: any) {
-      return { success: false, error: error.message };
+    }  catch (error: unknown) {
+      const message = error instanceof Error ? error.message : String(error);
+      return { success: false, error: message };
     }
   };
   

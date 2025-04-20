@@ -6,10 +6,6 @@ export interface AuthState {
   loading: boolean;
 }
 
-export interface AuthContextType extends AuthState {
-  // Ek context özellikleri gelecekte buraya eklenebilir
-}
-
 export interface AuthResponse {
   user: User | null;
   error: string | null;

@@ -19,8 +19,9 @@ export default function DownloadButton() {
       
       // Yeni bir sekme açarak indirme işlemini başlat
       window.open(url, '_blank');
-    } catch (err: any) {
-      console.error('İndirme hatası:', err);
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : 'Bilinmeyen bir hata oluştu.';
+      console.error('Dosya indirme hatası:', err);
       setError('Dosya indirme sırasında bir hata oluştu. Lütfen tekrar deneyin.');
     } finally {
       setDownloading(false);

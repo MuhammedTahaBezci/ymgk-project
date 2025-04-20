@@ -2,7 +2,7 @@
 
 import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
-import { useEffect, ReactNode } from 'react';
+import { useEffect } from 'react';
 import { ProtectedRouteProps } from '@/types';
 
 export default function ProtectedRoute({ children }: ProtectedRouteProps) {

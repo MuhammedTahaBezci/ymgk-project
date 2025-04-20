@@ -3,6 +3,7 @@
 import ProtectedRoute from '@/components/ProtectedRoute';
 import DownloadButton from '@/components/DownloadButton';
 import GameInfo from '@/components/GameInfo';
+import Image from 'next/image';
 
 export default function Download() {
   return (
@@ -12,7 +13,7 @@ export default function Download() {
         
         <div className="flex flex-col md:flex-row gap-8 mb-12">
           <div className="md:w-1/2">
-            <img 
+            <Image
               src="/images/game-screenshots/main.jpg" 
               alt="Oyun Ekran Görüntüsü" 
               className="w-full h-auto rounded-lg shadow-lg"
@@ -34,7 +35,7 @@ export default function Download() {
           <ol className="list-decimal pl-6 space-y-2">
             <li>APK dosyasını indirin.</li>
             <li>Android cihazınızda APK dosyasına tıklayın.</li>
-            <li>Kurulum izinlerini onaylayın (gerekirse "Bilinmeyen Kaynaklardan" yüklemeye izin verin).</li>
+            <li>Kurulum izinlerini onaylayın (gerekirse &quot;Bilinmeyen Kaynaklardan&quot; yüklemeye izin verin).</li>
             <li>Kurulum tamamlanana kadar bekleyin.</li>
             <li>Oyunu açın ve eğlencenin tadını çıkarın!</li>
           </ol>

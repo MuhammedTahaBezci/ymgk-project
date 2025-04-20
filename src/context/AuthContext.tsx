@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import { User } from 'firebase/auth';
 import { auth } from '../lib/firebase'; // Firebase yapılandırma dosyanız
 import { onAuthStateChanged } from 'firebase/auth';
