@@ -22,7 +22,7 @@ export default function DownloadButton() {
     } catch (err: unknown) {
       const errorMessage = err instanceof Error ? err.message : 'Bilinmeyen bir hata oluştu.';
       console.error('Dosya indirme hatası:', errorMessage);
-      setError('Dosya indirme sırasında bir hata oluştu. Lütfen tekrar deneyin.');
+      //setError('Dosya indirme sırasında bir hata oluştu. Lütfen tekrar deneyin.');
     } finally {
       setDownloading(false);
     }
