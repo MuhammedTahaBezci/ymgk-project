@@ -20,12 +20,15 @@ export default function DownloadButton() {
       // Yeni bir sekme açarak indirme işlemini başlat
       window.open(url, '_blank');
     } catch (err: unknown) {
-      const errorMessage = err instanceof Error ? err.message : 'Bilinmeyen bir hata oluştu.';
-      console.error('Dosya indirme hatası:', errorMessage);
-      //setError('Dosya indirme sırasında bir hata oluştu. Lütfen tekrar deneyin.');
-    } finally {
-      setDownloading(false);
+      if (err instanceof Error) {
+        console.error('Dosya indirme hatası:', err.message);
+        setError('Dosya indirme sırasında bir hata oluştu. Lütfen tekrar deneyin.');
+      } else {
+        console.error('Dosya indirme hatası: Bilinmeyen hata');
+        setError('Dosya indirme sırasında bir hata oluştu. Lütfen tekrar deneyin.');
+      }
     }
+    
   };
 
   return (
