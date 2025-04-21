@@ -1,11 +1,12 @@
 import { User } from 'firebase/auth';
 
-// Auth ile ilgili tipler
-export interface AuthState {
+// Auth context state tipi
+export interface AuthContextType {
   user: User | null;
   loading: boolean;
 }
 
+// Kullanıcı kayıt/giriş/çıkış işlemleri için
 export interface AuthResponse {
   user: User | null;
   error: string | null;
@@ -16,7 +17,7 @@ export interface SignOutResponse {
   error: string | null;
 }
 
-// Bileşen props tipleri
+// Route koruma ve context sağlayıcı bileşenleri için
 export interface ProtectedRouteProps {
   children: React.ReactNode;
 }
