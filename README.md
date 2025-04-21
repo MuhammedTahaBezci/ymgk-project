@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 Bu proje, oyun indirimi ve kullanıcı yönetimi sağlayan modern bir Next.js uygulamasıdır. Kullanıcılar giriş yapabilir, kayıt olabilir ve giriş yaptıklarında oyunu indirebilirler. Proje Firebase kullanarak kimlik doğrulama ve kullanıcı yönetimi sağlar.
 
-Canlı sürüm: https://ymgk-project-git-main-muhammedtahabezcis-projects.vercel.app/
+Canlı sürüm: (https://ymgk-project.vercel.app/)
 
 ✨ Özellikler
 
@@ -77,4 +77,4 @@ TypeScript
 🚀 Yayınlama
 
 Proje şu adreste yayındadır:
-https://ymgk-project-git-main-muhammedtahabezcis-projects.vercel.app/
+https://ymgk-project.vercel.app/
