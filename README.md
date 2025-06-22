@@ -1,6 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Bu proje, oyun indirimi ve kullanıcı yönetimi sağlayan modern bir Next.js uygulamasıdır. Kullanıcılar giriş yapabilir, kayıt olabilir ve giriş yaptıklarında oyunu indirebilirler. Proje Firebase kullanarak kimlik doğrulama ve kullanıcı yönetimi sağlar.
+Oyun kodlarının olduğu klasör drive içinde: https://drive.google.com/drive/folders/1FeVBgdli-n-64i5io31LYJwu9yz1U3SL
+
+Bu proje, oyun indirime ve kullanıcı yönetimi sağlayan modern bir Next.js uygulamasıdır. Kullanıcılar giriş yapabilir, kayıt olabilir ve giriş yaptıklarında oyunu indirebilirler. Proje Firebase kullanarak kimlik doğrulama ve kullanıcı yönetimi sağlar.
 
 Canlı sürüm: (https://ymgk-project.vercel.app/)
 
