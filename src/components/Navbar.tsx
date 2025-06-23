@@ -42,7 +42,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="text-xl font-bold">
-            Oyun Adı
+            Uzay Oyun
           </Link>
 
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>

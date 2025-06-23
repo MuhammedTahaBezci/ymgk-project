@@ -1,44 +1,29 @@
 'use client';
 
 import { useState } from 'react';
-import { ref, getDownloadURL } from 'firebase/storage';
-import { storage } from '@/lib/firebase';
 
 export default function DownloadButton() {
   const [downloading, setDownloading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
 
   const handleDownload = async () => {
     setDownloading(true);
-    setError(null);
-    
+
     try {
-      // Firebase Storage'dan APK dosyasının URL'sini alma
-      const fileRef = ref(storage, '/apk/uzayoyunu.apk');
-      const url = await getDownloadURL(fileRef);
-      
-      // Yeni bir sekme açarak indirme işlemini başlat
-      window.open(url, '_blank');
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        console.error('Dosya indirme hatası:', err.message);
-        setError('Dosya indirme sırasında bir hata oluştu. Lütfen tekrar deneyin.');
-      } else {
-        console.error('Dosya indirme hatası: Bilinmeyen hata');
-        setError('Dosya indirme sırasında bir hata oluştu. Lütfen tekrar deneyin.');
-      }
+      const link = document.createElement('a');
+      link.href = '/apk/uzayoyunu.apk'; // public klasörü üzerinden erişiyoruz
+      link.download = 'uzayoyunu.apk';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (err) {
+      console.error('İndirme sırasında bir hata oluştu:', err);
+    } finally {
+      setDownloading(false);
     }
-    
   };
 
   return (
     <div className="text-center">
-      {error && (
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-          {error}
-        </div>
-      )}
-      
       <button
         onClick={handleDownload}
         disabled={downloading}
@@ -46,7 +31,7 @@ export default function DownloadButton() {
       >
         {downloading ? 'İndiriliyor...' : 'APK Dosyasını İndir'}
       </button>
-      
+
       <p className="mt-4 text-gray-600">
         Android cihazınızda bu APK dosyasını yüklemek için, bilinmeyen kaynaklardan uygulama yüklemeye izin verdiğinizden emin olun.
       </p>

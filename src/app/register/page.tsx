@@ -24,7 +24,7 @@ export default function Register() {
   }
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="w-full h-screen container mx-auto py-10 flex justify-center items-center">
       <RegisterForm />
     </div>
   );

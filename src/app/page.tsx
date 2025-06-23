@@ -9,9 +9,7 @@ export default function Home() {
   const { user, loading } = useAuth();
 
   return (
-    <div className="flex flex-col items-center px-4 py-8">
-      <h1 className="text-4xl font-bold mb-10 text-center">Yapım Aşamasında</h1>
-
+    <div className="flex flex-col items-center px-4 py-8 mt-8">
       {/* Görsel ve açıklama yan yana */}
       <div className="flex flex-col md:flex-row items-center md:items-start gap-10 max-w-5xl w-full">
         {/* Sol: Oyun Görseli */}
@@ -21,10 +19,8 @@ export default function Home() {
             alt="Oyun Ekran Görüntüsü"
             width={350}
             height={700}
-            className="rounded-2xl shadow-xl border border-gray-300"
-            
           />
-          
+
         </div>
 
         {/* Sağ: Açıklama */}
