@@ -76,7 +76,23 @@ Tailwind CSS
 
 TypeScript
 
-🚀 Yayınlama
+🚀 Yayınlam
 
 Proje şu adreste yayındadır:
 https://ymgk-project.vercel.app/
+
+🚀 AR Uzay Nişancısı
+AR Uzay Nişancısı, klasik uzay savaşını Artırılmış Gerçeklik (AR) ile birleştiren, hızlı tempolu bir mobil oyundur. Oyuncu, sezgisel dokunmatik kontroller ve sürükleyici AR oynanışıyla gerçek dünya ortamında bir uzay gemisiyle pilotluk yaparak galaksiyi uzaylı istilalarından korur.
+
+🌌 Proje Genel Bakış
+Bu oyun, fiziksel alanınızı bir savaş alanına dönüştürür. AR teknolojisini kullanarak, uzaylı gemileri her yönden ortaya çıkar ve size saldırır. Siz de:
+
+Uzay geminizi gerçek zamanlı olarak hareket ettirin ve nişan alın
+Hızlı ateş eden lazer silahlarıyla düşmanları yok edin
+Gelen saldırılardan taktiksel olarak kaçının
+Kendi ortamınızın üzerine katmanlanmış destansı savaşları deneyimleyin
+🎯 Temel Oynanış
+AR Entegrasyonu: Gerçek dünya yüzeyleri, 3D uzaylı savaşları için arenalara dönüşür
+Dinamik Savaş: Hızlı refleks nişancılık, düşman dalgaları ve kaçınma mekanikleri
+Sürükleyicilik: Oynanışı çevrenize sabitlemek için cihaz kamerasını ve AR takibini kullanır
+İlerleme: Oyuncular düşman savaş gemilerini yok etmeye devam edebilir ve daha zorlu dalgalarla karşılaşabilir
