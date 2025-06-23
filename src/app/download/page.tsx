@@ -27,7 +27,9 @@ export default function Download() {
         
         <div className="bg-gray-100 p-8 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-6 text-center">İndirme Hazır!</h2>
-          <DownloadButton />
+          <DownloadButton 
+          
+          />
         </div>
         
         <div className="mt-12">

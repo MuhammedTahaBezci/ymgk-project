@@ -14,7 +14,7 @@ export default function DownloadButton() {
     
     try {
       // Firebase Storage'dan APK dosyasının URL'sini alma
-      const fileRef = ref(storage, 'downloads/game.apk');
+      const fileRef = ref(storage, '/apk/uzayoyunu.apk');
       const url = await getDownloadURL(fileRef);
       
       // Yeni bir sekme açarak indirme işlemini başlat
